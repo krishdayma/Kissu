@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Kissu 🫀</title>
+    <style>
+        /* सुंदर एनिमेटेड बैकग्राउंड */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #e74c3c, #9b59b6);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* मेन कार्ड कंटेनर */
+        .card {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* बड़ा टाइटल */
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+        }
+
+        /* धड़कता हुआ दिल */
+        .heart {
+            display: inline-block;
+            font-size: 3.5rem;
+            animation: heartbeat 1.2s infinite;
+            margin: 10px 0;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            20% { transform: scale(1.1); }
+            40% { transform: scale(1.15); }
+            60% { transform: scale(1); }
+            80% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* लव लाइन्स */
+        .love-lines {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-top: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            font-style: italic;
+        }
+
+        p {
+            margin: 12px 0;
+            animation: slideUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* लाइन्स के लिए थोड़ा सा डिले एनीमेशन */
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1.5s; }
+        p:nth-child(3) { animation-delay: 2.5s; }
+        p:nth-child(4) { animation-delay: 3.5s; }
+        p:nth-child(5) { animation-delay: 4.5s; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- बड़ा टाइटल -->
+        <h1>I love you kissu <span class="heart">🫀</span></h1>
+        
+        <!-- इंग्लिश में प्यार भरी लाइन्स -->
+        <div class="love-lines">
+            <p>"In your smile, I see something more beautiful than the stars."</p>
+            <p>"Every single day, my love for you grows deeper than the ocean."</p>
+            <p>"You are my today, my tomorrow, and my forever, my dear Krishna."</p>
+            <p>"No matter where life takes us, my heart will always beat for you."</p>
+            <p>"You are my happiest thought, Kissu, and I never want to lose you."</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
